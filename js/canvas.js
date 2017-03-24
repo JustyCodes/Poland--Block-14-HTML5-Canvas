@@ -15,14 +15,17 @@ function redrawMeme(image, topLine, bottomLine) {
       // Get Canvas2DContext
   var canvas = document.querySelector('canvas');
   var ctx = canvas.getContext("2d");
-  if (image != null) {ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
-      
-      //text styling
+  
+   //text styling
       ctx.font = '30pt Impact';
       ctx.textAlign = 'center';
       ctx.strokeStyle = 'black';
       ctx.lineWidth = 3;
       ctx.fillStyle = 'white';
+  
+  if (image != null) {ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+      
+      
     }
   if (topLine != null) {
     ctx.fillText(topLine, canvas.width / 2, 40);
