@@ -68,6 +68,6 @@ function saveFile() {
 window.topLineText = "";
 window.bottomLineText = "";
 
-document.querySelector('#image-container').addEventListener('change', handleFileSelect, false);
-document.querySelector('#image-container').addEventListener('input', textChangeListener, false);
+document.getElementById('file').addEventListener('change', handleFileSelect, false);
+document.querySelector('#text-input').addEventListener('input', textChangeListener, false);
 document.querySelector('button').addEventListener('click', saveFile, false);
